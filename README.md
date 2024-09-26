@@ -36,9 +36,9 @@ Welcome to the repository for my personal portfolio website. This project showca
 
 ## 🚀 Technologies Used
 
-- ![Html5](./assets/icon-html.svg) HTML5 📝
-- ![Javascript](./assets/icon-javascript.svg) JavaScript (Vanilla JS) 🚀
-- ![Tailwind](./assets/icon-tailwind.svg) Tailwind CSS 🎨
+- <img src="./assets/icon-html.svg" alt="HTML5" width="20"/> HTML5 📝
+- <img src="./assets/icon-javascript.svg" alt="JavaScript" width="20"/> JavaScript (Vanilla JS) 🚀
+- <img src="./assets/icon-tailwind.svg" alt="Tailwind" width="40"/> Tailwind CSS 🎨
 
 ## 🧑🏻‍💻 Author
 
