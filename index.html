@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 1 | Portofolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="px-5 lg:px-52 w-full">
+      <!-- Navbar -->
+      <nav
+        class="pt-5 pb-2 top-0 w-full z-50 sticky navbar-color transition-shadow duration-300"
+        id="navbar"
+      >
+        <div class="flex items-center justify-between">
+          <a href="/" class="text-2xl font-bold text-gradient">
+            &lt;Rifqi /&gt;
+          </a>
+
+          <!-- Desktop Menu -->
+          <ul class="hidden lg:flex h-full gap-4 text-white">
+            <li class="group relative">
+              <a
+                href="/#home"
+                class="text-xl md:text-lg font-bold pb-1.5 transition-all duration-300 hover:text-blue-500"
+              >
+                Home
+              </a>
+              <span
+                class="block h-[2px] bg-blue-500 absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300"
+              ></span>
+            </li>
+            <li class="group relative">
+              <a
+                href="/#about"
+                class="text-xl md:text-lg font-bold pb-1.5 transition-all duration-300 hover:text-blue-500"
+              >
+                About
+              </a>
+              <span
+                class="block h-[2px] bg-blue-500 absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300"
+              ></span>
+            </li>
+            <li class="group relative">
+              <a
+                href="/#skill"
+                class="text-xl md:text-lg font-bold pb-1.5 transition-all duration-300 hover:text-blue-500"
+              >
+                Skills
+              </a>
+              <span
+                class="block h-[2px] bg-blue-500 absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300"
+              ></span>
+            </li>
+            <li class="group relative">
+              <a
+                href="/#project"
+                class="text-xl md:text-lg font-bold pb-1.5 transition-all duration-300 hover:text-blue-500"
+              >
+                Project
+              </a>
+              <span
+                class="block h-[2px] bg-blue-500 absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300"
+              ></span>
+            </li>
+            <li class="group relative">
+              <a
+                href="/#experience"
+                class="text-xl md:text-lg font-bold pb-1.5 transition-all duration-300 hover:text-blue-500"
+              >
+                Experience
+              </a>
+              <span
+                class="block h-[2px] bg-blue-500 absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300"
+              ></span>
+            </li>
+            <li class="group relative">
+              <a
+                href="/#contact"
+                class="text-xl md:text-lg font-bold pb-1.5 transition-all duration-300 hover:text-blue-500"
+              >
+                Contact
+              </a>
+              <span
+                class="block h-[2px] bg-blue-500 absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300"
+              ></span>
+            </li>
+          </ul>
+
+          <!-- Mobile Menu  -->
+          <div class="lg:hidden">
+            <img
+              src="assets/icon-menu.svg"
+              alt="menu"
+              class="w-6 h-6 cursor-pointer"
+              id="menu-icon"
+            />
+          </div>
+        </div>
+        <hr class="mt-3 border-gray-600" />
+        <ul
+          class="hidden navbar-color relative left-0 w-full text-white transition-all duration-300 ease-in-out px-5 z-50"
+          id="mobile-menu"
+        >
+          <li class="group relative">
+            <a
+              href="/#home"
+              class="block p-2 lg:p-4 text-base lg:text-lg font-bold transition-all duration-300 hover:text-blue-500"
+              >Home</a
+            >
+            <span
+              class="block h-[2px] bg-blue-500 absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300"
+            ></span>
+          </li>
+          <li class="group relative">
+            <a
+              href="/#about"
+              class="block p-2 lg:p-4 text-base lg:text-lg font-bold transition-all duration-300 hover:text-blue-500"
+              >About</a
+            >
+            <span
+              class="block h-[2px] bg-blue-500 absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300"
+            ></span>
+          </li>
+          <li class="group relative">
+            <a
+              href="/#skill"
+              class="block p-2 lg:p-4 text-base lg:text-lg font-bold transition-all duration-300 hover:text-blue-500"
+              >Skills</a
+            >
+            <span
+              class="block h-[2px] bg-blue-500 absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300"
+            ></span>
+          </li>
+          <li class="group relative">
+            <a
+              href="/#project"
+              class="block p-2 lg:p-4 text-base lg:text-lg font-bold transition-all duration-300 hover:text-blue-500"
+              >Project</a
+            >
+            <span
+              class="block h-[2px] bg-blue-500 absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300"
+            ></span>
+          </li>
+          <li class="group relative">
+            <a
+              href="/#experience"
+              class="block p-2 lg:p-4 text-base lg:text-lg font-bold transition-all duration-300 hover:text-blue-500"
+              >Experience</a
+            >
+            <span
+              class="block h-[2px] bg-blue-500 absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300"
+            ></span>
+          </li>
+          <li class="group relative">
+            <a
+              href="/#contact"
+              class="block p-2 lg:p-4 text-base lg:text-lg font-bold transition-all duration-300 hover:text-blue-500"
+              >Contact</a
+            >
+            <span
+              class="block h-[2px] bg-blue-500 absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300"
+            ></span>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Content -->
+      <!-- home -->
+      <div
+        class="mt-5 xl:mt-32 pb-10 xl:pb-48"
+        id="home"
+        data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500"
+      >
+        <div class="text-white flex flex-col-reverse lg:flex-row gap-5">
+          <div class="basis-10/12">
+            <div>
+              <h3 class="text-2xl xl:text-3xl leading-tight font-bold">
+                Hello
+              </h3>
+              <h1 class="text-2xl xl:text-5xl font-bold text-gradient mt-3">
+                I'm Muhammad Rifqi Setiawan
+              </h1>
+              <p class="text-lg xl:text-xl mt-5 text-justify">
+                an Fullstack Developer, I'm passionate about technology and
+                programming. I have experience in building web applications
+                using modern technologies. I'm always eager to learn new things
+                and improve my skills. I'm a hard worker, a fast learner, and a
+                team player. I'm looking for opportunities to work on
+                challenging projects and grow as a developer.
+              </p>
+            </div>
+            <div class="mt-10 flex flex-row gap-5">
+              <div
+                class="btn-contact text-white py-2 px-2 rounded-md flex items-center gap-2 text-base xl:text-lg w-max"
+              >
+                <img
+                  src="assets/icon-whatsapp.svg"
+                  alt="WhatsApp icon"
+                  class="w-6 h-6 xl:w-8 xl:h-8"
+                />
+                <a
+                  href="https://wa.me/6281213881792"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex-1"
+                >
+                  Contact Me!
+                </a>
+              </div>
+              <div
+                class="bg-white main-color py-2 px-2 rounded-md flex items-center gap-2 text-base xl:text-lg w-max"
+              >
+                <img
+                  src="assets/icon-download.svg"
+                  alt="Download icon"
+                  class="w-5 h-5 xl:h-6 xl:w-6"
+                />
+                <a
+                  href="/assets/summary_rifqi.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="flex-1"
+                >
+                  Download CV
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- right -->
+          <div class="flex basis-1/4 justify-center items-center text-center">
+            <span
+              class="relative flex justify-center items-center w-40 h-40 sm:w-48 sm:h-48 lg:w-56 lg:h-56 xl:w-72 xl:h-72"
+            >
+              <img
+                src="assets/profile-emoji.png"
+                class="w-full h-full object-contain rounded-full"
+                alt="Profile Emoji"
+              />
+              <span
+                class="absolute inset-0 border-4 border-gray-800 rounded-full"
+              ></span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- about-me -->
+      <div class="pb-10 w-full mt-10">
+        <div data-aos="zoom-in-up" data-aos-duration="2000">
+          <div class="about-me" id="about">
+            <h3
+              class="text-2xl xl:text-4xl leading-tight font-bold text-white transition-all duration-300"
+            >
+              About Me
+            </h3>
+            <hr class="mt-3 h-line w-28 xl:w-44" />
+          </div>
+          <div class="flex flex-col xl:flex-row mt-3">
+            <div class="flex flex-1 items-center">
+              <h1
+                class="text-xl md:text-3xl xl:text-5xl font-bold text-gradient"
+              >
+                Short story about me and the beginning of my journey
+              </h1>
+            </div>
+            <div
+              class="flex-1 text-white text-lg xl:text-xl text-justify mt-7 xl:mt-0"
+            >
+              <p>
+                My name is Muhammad Rifqi Setiawan, but I am usually called
+                Rifqi. I come from Indonesia and I am a fresh graduate majoring
+                in Informatics Engineering from Budi Luhur University (UBL).
+              </p>
+              <p class="mt-3">
+                Focusing on technologies for web development, I have experience
+                in building web applications using modern technologies such as
+                Next JS, Node JS, MySQL, and PostgreSQL.
+              </p>
+              <p class="mt-3">
+                My goal is to become a Fullstack Developer and work on projects
+                that challenge me to grow as a developer. I am always eager to
+                learn new things and improve my skills.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- tools and skills -->
+        <div
+          class="pb-10 xl:pb-20 w-full flex flex-col justify-center items-center mt-10 transition-all duration-300"
+          id="skill"
+          data-aos="zoom-in-down"
+          data-aos-duration="2000"
+        >
+          <div class="tools-skill flex flex-col justify-center items-center">
+            <h3 class="text-4xl leading-tight font-bold text-white">
+              Tools & Skills
+            </h3>
+            <hr class="mt-3 h-line w-56" />
+          </div>
+          <div
+            class="inline-flex flex-row flex-wrap justify-center items-center mt-10 gap-4 bg-white py-4 px-4 rounded-lg"
+          >
+            <a
+              href="https://www.postman.com/docs/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cursor-pointer"
+            >
+              <img
+                src="assets/icon-postman.svg"
+                class="w-12 h-12 sm:w-20 sm:h-20"
+                alt="postman"
+              />
+            </a>
+            <a
+              href="https://vercel.com/docs"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cursor-pointer"
+            >
+              <img
+                src="assets/icon-vercel.svg"
+                class="w-16 h-16 sm:w-20 sm:h-20"
+                alt="vercel"
+              />
+            </a>
+            <a
+              href="https://code.visualstudio.com/docs"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cursor-pointer"
+            >
+              <img
+                src="assets/icon-vscode.svg"
+                class="w-12 h-12 sm:w-16 sm:h-16"
+                alt="vscode"
+              />
+            </a>
+            <a
+              href="https://git-scm.com/doc"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cursor-pointer"
+            >
+              <img
+                src="assets/icon-git.svg"
+                class="w-12 h-12 sm:w-16 sm:h-16"
+                alt="git"
+              />
+            </a>
+            <a
+              href="https://www.figma.com/resources/learn-design/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cursor-pointer"
+            >
+              <img
+                src="assets/icon-figma.svg"
+                class="w-10 h-10 sm:w-14 sm:h-14"
+                alt="figma"
+              />
+            </a>
+            <a
+              href="https://docs.github.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cursor-pointer"
+            >
+              <img
+                src="assets/icon-github.svg"
+                class="w-12 h-12 sm:w-16 sm:h-16"
+                alt="github"
+              />
+            </a>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cursor-pointer"
+            >
+              <img
+                src="assets/icon-html.svg"
+                class="w-12 h-12 sm:w-16 sm:h-16"
+                alt="html"
+              />
+            </a>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cursor-pointer"
+            >
+              <img
+                src="assets/icon-css.svg"
+                class="w-12 h-12 sm:w-16 sm:h-16"
+                alt="css"
+              />
+            </a>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cursor-pointer"
+            >
+              <img
+                src="assets/icon-javascript.svg"
+                class="w-12 h-12 sm:w-16 sm:h-16"
+                alt="javascript"
+              />
+            </a>
+            <a
+              href="https://www.typescriptlang.org/docs/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cursor-pointer"
+            >
+              <img
+                src="assets/icon-typescript.svg"
+                class="w-12 h-12 sm:w-16 sm:h-16"
+                alt="typescript"
+              />
+            </a>
+            <a
+              href="https://www.php.net/docs.php"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cursor-pointer"
+            >
+              <img
+                src="assets/icon-php.svg"
+                class="w-14 h-14 sm:w-16 sm:h-16"
+                alt="php"
+              />
+            </a>
+            <a
+              href="https://golang.org/doc/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cursor-pointer"
+            >
+              <img
+                src="assets/icon-golang.svg"
+                class="w-14 h-14 sm:w-16 sm:h-16"
+                alt="golang"
+              />
+            </a>
+            <a
+              href="https://reactjs.org/docs/getting-started.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cursor-pointer"
+            >
+              <img
+                src="assets/icon-react.svg"
+                class="w-14 h-14 sm:w-16 sm:h-16"
+                alt="react"
+              />
+            </a>
+            <a
+              href="https://nextjs.org/docs"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cursor-pointer"
+            >
+              <img
+                src="assets/icon-next-js.svg"
+                class="w-14 h-14 sm:w-16 sm:h-16"
+                alt="next-js"
+              />
+            </a>
+            <a
+              href="https://laravel.com/docs"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cursor-pointer"
+            >
+              <img
+                src="assets/icon-laravel.svg"
+                class="w-16 h-16 sm:w-20 sm:h-20"
+                alt="laravel"
+              />
+            </a>
+            <a
+              href="https://nodejs.org/en/docs/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cursor-pointer"
+            >
+              <img
+                src="assets/icon-nodejs.svg"
+                class="w-12 h-12 sm:w-16 sm:h-16"
+                alt="nodejs"
+              />
+            </a>
+            <a
+              href="https://dev.mysql.com/doc/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cursor-pointer"
+            >
+              <img
+                src="assets/icon-mysql.svg"
+                class="w-16 h-16 sm:w-20 sm:h-20"
+                alt="mysql"
+              />
+            </a>
+            <a
+              href="https://www.postgresql.org/docs/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cursor-pointer"
+            >
+              <img
+                src="assets/icon-postgresql.svg"
+                class="w-14 h-14 sm:w-16 sm:h-16"
+                alt="postgresql"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!-- projects -->
+        <div class="pb-12 w-full transition-all duration-300" id="project">
+          <div class="project">
+            <h3
+              class="text-4xl leading-tight font-bold text-white"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
+              Project that i
+              <br />
+              <span class="text-gradient">has been done</span>
+            </h3>
+            <hr class="mt-3 h-line w-60" />
+
+            <!-- list projects -->
+            <div
+              class="mt-5 flex flex-col lg:flex-row gap-4 lg:gap-10"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
+              <div class="flex flex-1">
+                <img
+                  src="assets/project-masjid.png"
+                  alt="project-masjid"
+                  class="w-full border-2 border-white"
+                />
+              </div>
+              <div class="flex flex-1">
+                <div class="flex flex-col text-white justify-center">
+                  <h4 class="text-lg lg:text-xl subtitle-color">
+                    Web Development
+                  </h4>
+                  <h2 class="text-2xl lg:text-3xl mt-3 font-bold">
+                    Masjid Nuruddin Landingpage
+                  </h2>
+
+                  <p
+                    class="mt-3 text-justify text-base lg:text-lg subtitle-color"
+                  >
+                    Masjid Nuruddin is a landing page for a mosque in Indonesia.
+                    This project was built using React JS, Tailwind CSS, and
+                    deployed on Vercel. This website can read the Quran, listen
+                    the Quran, and see the schedule of the mosque.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="mt-5 lg:mt-14 flex flex-col lg:flex-row gap-4 lg:gap-10"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
+              <div class="flex flex-1">
+                <img
+                  src="assets/project-store.png"
+                  alt="project-store"
+                  class="w-full border-2 border-white"
+                />
+              </div>
+              <div class="flex flex-1">
+                <div class="flex flex-col text-white justify-center">
+                  <h4 class="text-lg lg:text-xl subtitle-color">
+                    Web Development
+                  </h4>
+                  <h2 class="text-2xl lg:text-3xl mt-3 font-bold">Store App</h2>
+
+                  <p
+                    class="mt-3 text-justify text-base lg:text-lg subtitle-color"
+                  >
+                    Store App is a web application for managing products in a
+                    store. This project was built using Next JS, Tailwind CSS,
+                    Zustand, Prisma and deployed on Vercel. This website can
+                    add, edit, delete, and search for products.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="mt-5 lg:mt-14 flex flex-col lg:flex-row gap-4 lg:gap-10"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
+              <div class="flex flex-1">
+                <img
+                  src="assets/project-anime.png"
+                  alt="project-anime"
+                  class="w-full border-2 border-white"
+                />
+              </div>
+              <div class="flex flex-1">
+                <div class="flex flex-col text-white justify-center">
+                  <h4 class="text-lg lg:text-xl subtitle-color">
+                    Web Development
+                  </h4>
+                  <h2 class="text-2xl lg:text-3xl mt-3 font-bold">
+                    Rifqi AnimeList
+                  </h2>
+
+                  <p
+                    class="mt-3 text-justify text-base lg:text-lg subtitle-color"
+                  >
+                    Rifqi AnimeList is a web application for searching anime,
+                    see the details of the anime, add comment and rating. This
+                    project was built using Next JS, Tailwind CSS, and deployed
+                    on Vercel. This website can search for anime, see the
+                    details of the anime, add comment and rating.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="mt-5 lg:mt-14 flex flex-col lg:flex-row gap-4 lg:gap-10"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
+              <div class="flex flex-1">
+                <img
+                  src="assets/project-mygram.png"
+                  alt="project-anime"
+                  class="w-full border-2 border-white"
+                />
+              </div>
+              <div class="flex flex-1">
+                <div class="flex flex-col text-white justify-center">
+                  <h4 class="text-lg lg:text-xl">Backend Development</h4>
+                  <h2 class="text-2xl lg:text-3xl mt-3 font-bold">
+                    Project MyGram API
+                  </h2>
+
+                  <p class="mt-3 text-justify text-base lg:text-lg">
+                    Project MyGram API is a backend project for a social media
+                    application. This project was built using Golang, Gin, Gorm,
+                    PostgreSQL, and Postman. This project can add, edit, delete,
+                    and search for users and posts.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- experiences -->
+        <div class="pb-14 w-full transition-all duration-300" id="experience">
+          <div
+            class="experiences flex flex-col justify-center items-center"
+            data-aos="flip-left"
+            data-aos-duration="2000"
+          >
+            <h3 class="text-4xl font-bold text-white">Experiences</h3>
+            <hr class="mt-3 h-line w-56" />
+          </div>
+
+          <!--  list experiences  -->
+          <div
+            class="experience-content container mx-auto py-4 lg:py-8 rounded-lg mt-10"
+          >
+            <div
+              class="px-10 mt-3"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
+              <h2 class="text-xl lg:text-2xl font-bold text-blue-400 mb-2">
+                Phincon Academy Bootcamp Batch 2
+              </h2>
+              <div class="px-2 lg:px-8 py-2 lg:py-4">
+                <p
+                  class="text-gray-400 text-lg font-semibold mb-1 lg:mb-2 experience-title"
+                >
+                  Fullstack Javascript Trainee
+                </p>
+                <p class="text-gray-400 mb-2 lg:mb-4">
+                  September - December 2024
+                </p>
+              </div>
+              <p class="experience-subtitle text-justify">
+                Intensive bootcamp to be a good Fullstack Javascript. This
+                program is designed to provide a comprehensive understanding of
+                the software development life cycle, from requirements gathering
+                to design, development, testing, deployment, and maintenance.
+                The program covers the latest technologies and tools used in the
+                industry.
+              </p>
+              <div class="flex mt-5 gap-3 text-base">
+                <span
+                  class="bg-blue-500 text-white text-sm font-semibold px-2 py-1 rounded flex items-center justify-center"
+                >
+                  BOOTCAMP
+                </span>
+                <span
+                  class="bg-green-600 text-white text-sm font-semibold px-2 py-1 rounded flex items-center justify-center"
+                >
+                  CODE
+                </span>
+                <span
+                  class="bg-gray-600 text-white text-sm font-semibold px-2 py-1 rounded flex items-center justify-center"
+                >
+                  JAVASCRIPT
+                </span>
+              </div>
+              <hr class="mt-12 h-line" />
+            </div>
+
+            <div
+              class="px-10 mt-5"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
+              <h2 class="text-xl lg:text-2xl font-bold text-blue-400 mb-2">
+                FGA Digitalent Kominfo x Hacktiv8 x IBM Bootcamp
+              </h2>
+              <div class="px-2 lg:px-8 py-2 lg:py-4">
+                <p
+                  class="text-gray-400 text-lg font-semibold mb-1 lg:mb-2 experience-title"
+                >
+                  Web Development & React Trainee
+                </p>
+                <p class="text-gray-400 mb-2 lg:mb-4">August - October 2024</p>
+              </div>
+              <p class="experience-subtitle text-justify">
+                This bootcamp program is designed to teach how to build web
+                applications using React. It offers a comprehensive
+                understanding of the software development life cycle, from
+                gathering requirements, designing, developing, testing, to
+                deployment and maintenance. The program covers the latest
+                technologies and tools used in the industry, with learning
+                modules including JavaScript fundamentals, React fundamentals,
+                Redux, Tailwind CSS, and Git.
+              </p>
+              <div class="flex mt-5 gap-3 text-base">
+                <span
+                  class="bg-blue-500 text-white text-sm font-semibold px-2 py-1 rounded flex items-center justify-center"
+                >
+                  BOOTCAMP
+                </span>
+                <span
+                  class="bg-amber-600 text-white text-sm font-semibold px-2 py-1 rounded flex items-center justify-center"
+                >
+                  DIGITALENT
+                </span>
+                <span
+                  class="bg-gray-600 text-white text-sm font-semibold px-2 py-1 rounded flex items-center justify-center"
+                >
+                  REACT
+                </span>
+              </div>
+              <hr class="mt-12 h-line" />
+            </div>
+
+            <div
+              class="px-10 mt-5"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
+              <h2 class="text-xl lg:text-2xl font-bold text-blue-400 mb-2">
+                FGA Digitalent Kominfo x Hacktiv8 Bootcamp
+              </h2>
+              <div class="px-2 lg:px-8 py-2 lg:py-4">
+                <p
+                  class="text-gray-400 text-lg font-semibold mb-1 lg:mb-2 experience-title"
+                >
+                  Scalable Web Service with Golang Trainee
+                </p>
+                <p class="text-gray-400 mb-2 lg:mb-4">February - April 2024</p>
+              </div>
+              <p class="experience-subtitle text-justify">
+                A bootcamp program to learn how to build scalable web services
+                using Golang. This program is designed to provide a
+                comprehensive understanding of the software development life
+                cycle, from requirements gathering to design, development,
+                testing, deployment, and maintenance. The program covers the
+                latest technologies and tools used in the industry. Learning
+                including Golang, Gin, Gorm, PostgreSQL, Postman, and Swagger.
+              </p>
+              <div class="flex mt-5 gap-3 text-base">
+                <span
+                  class="bg-blue-500 text-white text-sm font-semibold px-2 py-1 rounded flex items-center justify-center"
+                >
+                  BOOTCAMP
+                </span>
+                <span
+                  class="bg-amber-600 text-white text-sm font-semibold px-2 py-1 rounded flex items-center justify-center"
+                >
+                  DIGITALENT
+                </span>
+                <span
+                  class="bg-gray-600 text-white text-sm font-semibold px-2 py-1 rounded flex items-center justify-center"
+                >
+                  GOLANG
+                </span>
+              </div>
+              <hr class="mt-12 h-line" />
+            </div>
+
+            <div
+              class="px-10 mt-5"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
+              <h2 class="text-xl lg:text-2xl font-bold text-blue-400 mb-2">
+                Internship at PT. Kazeto Putra Perkasa x Kampus Merdeka Batch 3
+              </h2>
+              <div class="px-2 lg:px-8 py-2 lg:py-4">
+                <p
+                  class="text-gray-400 text-lg font-semibold mb-1 lg:mb-2 experience-title"
+                >
+                  IT Programmer Intern
+                </p>
+                <p class="text-gray-400 mb-2 lg:mb-4">August - December 2022</p>
+              </div>
+              <p class="experience-subtitle text-justify">
+                This internship program is intended to train participants in
+                building web applications using modern technologies. It is
+                structured to give a thorough understanding of the software
+                development life cycle, covering everything from requirements
+                gathering to design, development, testing, deployment, and
+                maintenance. The program includes the latest industry
+                technologies and tools, such as Laravel, MySQL, Tailwind CSS,
+                and Git. I am working on developing a student enrollment website
+                for Sekolah Kak Seto, and the internship will take place online.
+              </p>
+              <div class="flex mt-5 gap-3 text-base">
+                <span
+                  class="bg-purple-700 text-white text-sm font-semibold px-2 py-1 rounded flex items-center justify-center"
+                >
+                  INTERNSHIP
+                </span>
+                <span
+                  class="bg-emerald-600 text-white text-sm font-semibold px-2 py-1 rounded flex items-center justify-center"
+                >
+                  KAMPUS MERDEKA
+                </span>
+                <span
+                  class="bg-gray-600 text-white text-sm font-semibold px-2 py-1 rounded flex items-center justify-center"
+                >
+                  LARAVEL
+                </span>
+              </div>
+              <hr class="mt-12 h-line" />
+            </div>
+
+            <div
+              class="px-10 mt-5"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
+              <h2 class="text-xl lg:text-2xl font-bold text-blue-400 mb-2">
+                Frontend Engineering CAMP at Ruangguru x Kampus Merdeka Batch 2
+              </h2>
+              <div class="px-2 lg:px-8 py-2 lg:py-4">
+                <p
+                  class="text-gray-400 text-lg font-semibold mb-1 lg:mb-2 experience-title"
+                >
+                  Frontend Engineering Trainee
+                </p>
+                <p class="text-gray-400 mb-2 lg:mb-4">February - August 2024</p>
+              </div>
+              <p class="experience-subtitle text-justify">
+                A bootcamp program to learn how to build scalable web services
+                using Golang. This program is designed to provide a
+                comprehensive understanding of the software development life
+                cycle, from requirements gathering to design, development,
+                testing, deployment, and maintenance. The program covers the
+                latest technologies and tools used in the industry. Learning
+                including Golang, Gin, Gorm, PostgreSQL, Postman, and Swagger.
+              </p>
+              <div class="flex mt-5 gap-3 text-base">
+                <span
+                  class="bg-blue-500 text-white text-sm font-semibold px-2 py-1 rounded flex items-center justify-center"
+                >
+                  BOOTCAMP
+                </span>
+                <span
+                  class="bg-emerald-600 text-white text-sm font-semibold px-2 py-1 rounded flex items-center justify-center"
+                >
+                  KAMPUS MERDEKA
+                </span>
+                <span
+                  class="bg-gray-600 text-white text-sm font-semibold px-2 py-1 rounded flex items-center justify-center"
+                >
+                  GOLANG
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- get in touch -->
+        <div class="w-full transition-all duration-300" id="contact">
+          <div
+            class="get-in-touch flex flex-col justify-center items-center"
+            data-aos="flip-left"
+            data-aos-duration="1500"
+          >
+            <h3
+              class="text-4xl leading-tight font-bold text-white text-gradient"
+            >
+              GET IN TOUCH
+            </h3>
+            <hr class="mt-3 h-line w-60" />
+            <p class="mt-3 subtitle-color text-lg text-center">
+              Interested in working together? <br />
+              Feel free to contact me for any project or collaboration.
+            </p>
+          </div>
+          <div
+            class="flex flex-col sm:flex-row mt-5 lg:mt-10 gap-5"
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500"
+          >
+            <div class="flex-1 items-center">
+              <div class="text-white">
+                <h2
+                  class="text-xl lg:text-2xl font-bold uppercase text-gradient"
+                >
+                  Contact Me
+                </h2>
+                <p
+                  class="mt-3 text-justify subtitle-color text-lg leading-tight"
+                >
+                  I'm interested in freelance. However, if you have other
+                  requests or questions, don't hesitate to use the form.
+                </p>
+              </div>
+              <!-- address -->
+              <div class="flex flex-row mt-5 gap-3">
+                <div class="flex justify-center items-center">
+                  <img
+                    src="assets/icon-location.svg"
+                    alt="location"
+                    class="w-8 h-8 mr-2"
+                  />
+                </div>
+                <div class="text-white flex-1">
+                  <p class="text-lg font-bold">Address</p>
+                  <p class="text-base subtitle-color">
+                    Jl. Mawar No. 123, Sukamaju Village, Kebayoran Baru
+                    District, South Jakarta, DKI Jakarta, 12130, Indonesia
+                  </p>
+                </div>
+              </div>
+              <!-- phone -->
+              <div class="flex flex-row mt-5 gap-3">
+                <div class="flex justify-center items-center">
+                  <img
+                    src="assets/icon-phone.svg"
+                    alt="phone"
+                    class="w-8 h-8 mr-2"
+                  />
+                </div>
+                <div class="text-white flex-1">
+                  <p class="text-lg font-bold">Phone</p>
+                  <p class="text-base subtitle-color">
+                    +62 812-1388-1792 (WhatsApp)
+                  </p>
+                </div>
+              </div>
+
+              <!-- email -->
+              <div class="flex flex-row mt-5 gap-3">
+                <div class="flex justify-center items-center">
+                  <img
+                    src="assets/icon-email.svg"
+                    alt="email"
+                    class="w-8 h-8 mr-2"
+                  />
+                </div>
+                <div class="text-white flex-1">
+                  <p class="text-lg font-bold">Email</p>
+                  <p class="text-base subtitle-color">rifqi@gmail.com</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-1">
+              <form
+                class="w-full max-w-lg"
+                onsubmit="validateForm()"
+                id="contactForm"
+              >
+                <h2
+                  class="text-xl lg:text-2xl text-white font-bold uppercase text-gradient"
+                >
+                  Please, fill out the form below!!
+                </h2>
+                <div class="flex flex-wrap -mx-3 mb-4 mt-3">
+                  <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                    <label
+                      class="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+                      for="name"
+                    >
+                      Your Name
+                    </label>
+                    <input
+                      class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                      id="name"
+                      type="text"
+                      placeholder="Your name"
+                    />
+                    <p
+                      id="name-error"
+                      class="text-red-500 text-xs italic hidden"
+                    >
+                      Please enter a valid name.
+                    </p>
+                  </div>
+                  <div class="w-full md:w-1/2 px-3">
+                    <label
+                      class="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+                      for="email"
+                    >
+                      Email
+                    </label>
+                    <input
+                      class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
+                      id="email"
+                      type="email"
+                      placeholder="Email"
+                    />
+                    <p
+                      id="email-error"
+                      class="text-red-500 text-xs italic hidden mt-3"
+                    >
+                      Please enter a valid email address.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-4">
+                  <div class="w-full px-3">
+                    <label
+                      class="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+                      for="subject"
+                    >
+                      Subject
+                    </label>
+                    <input
+                      class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                      id="subject"
+                      type="text"
+                      placeholder="Subject"
+                    />
+                    <p
+                      id="subject-error"
+                      class="text-red-500 text-xs italic hidden"
+                    >
+                      Please enter a subject.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-6">
+                  <div class="w-full px-3">
+                    <label
+                      class="block uppercase tracking-wide text-white text-xs font-bold mb-2"
+                      for="message"
+                    >
+                      Message
+                    </label>
+                    <textarea
+                      class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white h-48 resize-none"
+                      id="message"
+                      placeholder="Message"
+                    ></textarea>
+                    <p
+                      id="message-error"
+                      class="text-red-500 text-xs italic hidden"
+                    >
+                      Please enter your message.
+                    </p>
+                  </div>
+                </div>
+                <div class="flex justify-end">
+                  <button
+                    class="shadow bg-blue-900 hover:bg-blue-800 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                    type="submit"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <hr class="mt-16 h-line" />
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="px-5 lg:px-52 pb-10 w-full">
+        <div
+          class="footer-content flex flex-col-reverse sm:flex-row justify-between items-center gap-5"
+        >
+          <div class="text-white">
+            <p class="text-sm text-center sm:text-left">
+              Developed using
+              <a href="" class="text-blue-600">
+                &nbsp;Html, Javascript and Tailwind CSS.
+              </a>
+            </p>
+            <p class="text-sm mt-3 text-center sm:text-left">
+              Code licensed under <bold>MIT License</bold>
+            </p>
+            <p class="text-sm mt-3 text-center sm:text-left">
+              Made with <bold>❤️</bold> by Muhammad Rifqi Setiawan © 2024.
+              <span class="subtitle-color">&nbsp;Version 1.0</span>
+            </p>
+          </div>
+
+          <div
+            class="mt-7 sm:mt-0 gap-5 grid grid-cols-4 lg:grid-cols-2 justify-center items-center"
+          >
+            <a
+              href="mailto:muhrifqis100@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group"
+            >
+              <div
+                class="w-7 h-7 bg-gray-800 rounded-full flex items-center justify-center transition duration-300 ease-in-out group-hover:bg-gray-600"
+              >
+                <img
+                  src="assets/icon-email.svg"
+                  alt="email"
+                  class="cursor-pointer transition duration-300 ease-in-out group-hover:brightness-125"
+                />
+              </div>
+            </a>
+
+            <a
+              href="https://instagram.com/rifqi.setiawan18"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group"
+            >
+              <div
+                class="w-7 h-7 bg-gray-800 rounded-full flex items-center justify-center transition duration-300 ease-in-out group-hover:bg-pink-500"
+              >
+                <img
+                  src="assets/icon-instagram.svg"
+                  alt="instagram"
+                  class="cursor-pointer transition duration-300 ease-in-out group-hover:brightness-125"
+                />
+              </div>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/muhrifqis/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group"
+            >
+              <div
+                class="w-7 h-7 bg-gray-800 rounded-full flex items-center justify-center transition duration-300 ease-in-out group-hover:bg-blue-700"
+              >
+                <img
+                  src="assets/icon-linkedin.svg"
+                  alt="linkedin"
+                  class="cursor-pointer transition duration-300 ease-in-out group-hover:brightness-125"
+                />
+              </div>
+            </a>
+
+            <a
+              href="https://github.com/rifqi142"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group"
+            >
+              <div
+                class="w-7 h-6 bg-gray-800 rounded-full flex items-center justify-center transition duration-300 ease-in-out group-hover:bg-gray-700"
+              >
+                <img
+                  src="assets/icon-github-white.svg"
+                  alt="github"
+                  class="cursor-pointer transition duration-300 ease-in-out group-hover:brightness-125"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button
+      id="scrollUpBtn"
+      class="fixed bottom-8 right-8 w-12 h-12 rounded-full bg-transparent border-4 border-red-500 p-1"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        class="text-red-500 w-full h-full"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 15l7-7 7 7"
+        />
+      </svg>
+    </button>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

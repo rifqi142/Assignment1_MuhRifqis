@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #15202b;
+  font-family: "Poppins", sans-serif;
+}
+
+.h-line {
+  height: 1px;
+  border: none;
+  background-color: #374151;
+}
+
+.navbar-color {
+  background-color: #15202b;
+}
+
+.btn-contact {
+  background-color: #3162ae;
+}
+
+.btn-contact:hover {
+  background-color: #2a5298;
+}
+
+.main-color {
+  color: #3162ae;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #14ecc8, #1390dd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-color:hover {
+  background-color: #d6e7ff;
+}
+
+.experience-content {
+  background-color: #12151d;
+  color: #cbd5e0;
+}
+
+.subtitle-color {
+  color: #cbd5e0;
+}
+
+.active {
+  border-color: #1d4ed8;
+  color: #1d4ed8;
+  text-decoration: underline;
+}
