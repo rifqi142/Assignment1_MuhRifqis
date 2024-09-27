@@ -3,7 +3,7 @@ const mobileMenu = document.getElementById("mobile-menu");
 
 menuIcon.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
-  
+
   mobileMenu.classList.toggle("-translate-y-full");
   mobileMenu.classList.toggle("translate-y-0");
   mobileMenu.classList.toggle("opacity-0");
@@ -119,3 +119,32 @@ window.addEventListener("scroll", () => {
 scrollUpBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+// add mongo to tools skills
+const tools = document.getElementById("list-tools");
+
+function addImageToListTools(name, imgSrc, url) {
+  const a = document.createElement("a");
+  const img = document.createElement("img");
+
+  a.setAttribute("href", url);
+  a.setAttribute("target", "_blank");
+  a.setAttribute("rel", "noopener noreferrer");
+  a.setAttribute("aria-label", name);
+  a.classList.add("cursor-pointer");
+
+  img.setAttribute("src", imgSrc);
+  img.setAttribute("alt", name);
+  img.classList.add("w-12", "h-12", "sm:w-20", "sm:h-20");
+
+  a.appendChild(img);
+  tools.appendChild(a);
+}
+
+addImageToListTools("Mongodb", "/assets/icon-mongodb.svg", "https://redis.io/");
+addImageToListTools(
+  "Sequelize",
+  "/assets/icon-sequelize.svg",
+  "https://sequelize.org/"
+);
+addImageToListTools("Redis", "/assets/icon-redis.svg", "https://redis.io/");
